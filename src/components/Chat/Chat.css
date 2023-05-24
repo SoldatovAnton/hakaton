@@ -19,6 +19,10 @@
    overflow: hidden;
    display: flex;
    flex-direction: column;
+
+   -webkit-box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
+   box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
 }
 
 .client-chat-header {
@@ -38,6 +42,7 @@
    text-align: center;
    font-size: 2vh;
    color: black;
+   margin-top: 50px;
 }
 
 .chat-block {
@@ -69,13 +74,41 @@
    font-family: 'Inter';
    font-style: normal;
    font-weight: 400;
-   font-size: 3vh;
+   font-size: 1.7rem;
    text-align: center;
    color: #13004C;
    border-radius: 7px;
 
    background-color: #FEC5CC;
-   padding: 0.5vh;
+   padding: 0.5vh 1.2vh;
+
+   -webkit-box-shadow: 0px -3px 22px 6px rgba(254, 197, 204, 0.2);
+   -moz-box-shadow: 0px -3px 22px 6px rgba(254, 197, 204, 0.2);
+   box-shadow: 0px -3px 22px 6px rgba(254, 197, 204, 0.2);
+}
+
+/* .client-chat__wrapper {
+   position: relative;
+} */
+
+.client-chat__cross-close img {
+   width: 20px;
+}
+
+.client-chat__cross-close {
+   position: fixed;
+   bottom: 61vh;
+   right: 19vw;
+   background-color: #13004C;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   padding: 3px;
+   cursor: pointer;
+
+   -webkit-box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
+   box-shadow: -4px 7px 14px 5px rgba(34, 60, 80, 0.2);
 }
 
 .send-message-icon {

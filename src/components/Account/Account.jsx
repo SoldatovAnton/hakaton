@@ -1,15 +1,23 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import './Account.css';
-import ClientChat from '../Chat/ClientChat';
+import arrow from '../../assets/Arrow.svg'
 
 
 const Account = () => {
    return (
       <>
+         <div className="back-arrow">
+            <Link to="/" className='back-arrow-link'>
+               <img src={arrow} alt="back arrow" />
+               <span className="back-text">Назад</span>
+            </Link>
+         </div>
          <div className='account container'>
             <div className="account-logo">
-               <h1 className='account-logo__text'>ROWI</h1>
+               <Link to='/'>
+                  <h1 className='account-logo__text'>ROWI</h1>
+               </Link>
                <h4 className='account-descript'>Финансирование <br /> бизнеса</h4>
             </div>
             <div className="account-auth">
@@ -18,7 +26,6 @@ const Account = () => {
             </div>
             <span className="account-gradient"></span>
          </div>
-         <ClientChat />
       </>
    )
 }

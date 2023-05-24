@@ -1,3 +1,27 @@
+.back-arrow {
+   position: absolute;
+   top: 4vh;
+   left: 2vw;
+
+   z-index: 5;
+}
+
+.back-arrow img {
+   height: 4vh;
+   margin-right: 1.5vw;
+}
+
+.back-arrow-link {
+   display: flex;
+   align-items: center;
+}
+
+.back-text {
+   font-size: 3vh;
+   font-family: 'Inter';
+   color: #13004C;
+}
+
 .account {
    display: flex;
    align-items: center;
@@ -44,8 +68,8 @@
 
    color: #13004C;
 
-   margin-left: 50%;
-   margin-top: -20px;
+   margin-left: 42%;
+   margin-top: -44px;
 }
 
 .form-auth {
@@ -70,7 +94,7 @@
    font-family: 'Inter';
    font-style: normal;
    font-weight: 400;
-   font-size: 2vh;
+   font-size: 1.5rem;
    line-height: 24px;
    color: #13004C;
    margin-top: 3vh;
@@ -79,8 +103,12 @@
 
 .login-description-link {
    color: #7998EA;
-   /* border-bottom: #7998EA 1px solid; */
    text-decoration: underline;
+
+}
+
+.login-description-link:hover {
+   text-decoration: none;
 }
 
 .login-form {
@@ -92,13 +120,19 @@
 .form-button {
    background: #4764F8;
    border-radius: 10px;
-   padding: 10px 25px;
+   padding: 1.2vh 3.2vh;
    margin-top: 27px;
    font-family: 'Inter';
    font-style: normal;
    font-weight: 400;
-   font-size: 3vh;
+   font-size: 1.8rem;
    color: #FDFDFD;
+
+   transition: all 0.2s linear;
+}
+
+.form-button:hover {
+   background: #7998EA;
 }
 
 .form-input {
@@ -110,9 +144,11 @@
    margin: 0 auto;
    margin-top: 27px;
    padding-left: 1vw;
+
+   min-height: 36px;
 }
 
 .form-input::placeholder {
-   font-size: 2vh;
+   font-size: 12px;
    color: #5F78F9;
 }
